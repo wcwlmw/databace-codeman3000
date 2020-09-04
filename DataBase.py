@@ -85,7 +85,7 @@ code = input("Hi Leon, Enter Activation Code:")
 if code == "374389473084738":
     First_Time()
 
-elif code == "NMDiFgdh8":
+elif code == "":
     Normal()
 
 else:
