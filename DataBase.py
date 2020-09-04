@@ -3,10 +3,11 @@ import time
 
 
 def First_Time():
-    choice = input('Type first thing to add to database')
+    choice = input('Type first thing to add to database ')
+    passcode = imput('Please type what you want your passcode to be ')
     DataBase = [choice]
     while choice != 'DONE':
-        choice = input('type next item to add to database, if finished type DONE')
+        choice = input('type next item to add to database, if finished type DONE ')
         if choice != 'DONE':
             DataBase.append(choice)
             
@@ -41,10 +42,10 @@ def Normal():
             print(DataBase)
 
         elif int(choice) == 2:
-            choice = input('Type first thing to add to database')
+            choice = input('Type first thing to add to database ')
             DataBase.append(choice)
             while choice != 'DONE':
-                choice = input('type next item to add to database, if finished type DONE')
+                choice = input('type next item to add to database, if finished type DONE ')
                 if choice != 'DONE':
                     DataBase.append(choice)
 
@@ -56,7 +57,7 @@ def Normal():
             
             print("")
             print("")
-            print("Which Item to delete? Enter name")
+            print("Which Item to delete? Enter name ")
             choice = input("")
             
             
@@ -80,14 +81,15 @@ def Normal():
 
             
 
-code = input("Hi Leon, Enter Activation Code:")
+code = input("Hi (imput user choice name here), Enter Activation Code:")
 
-if code == "374389473084738":
+if code == "":
     First_Time()
 
-elif code == "":
+elif code == passcode:
     Normal()
 
 else:
     code = input("wrong")
+
     
