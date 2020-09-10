@@ -5,6 +5,7 @@ import time
 def First_Time():
     choice = input('Type first thing to add to database ')
     passcode = imput('Please type what you want your passcode to be ')
+    pickle.dump(passcode, open('passcode.Dat','wb'))
     DataBase = [choice]
     while choice != 'DONE':
         choice = input('type next item to add to database, if finished type DONE ')
@@ -80,7 +81,7 @@ def Normal():
 
 
             
-
+passcode = pickle.load(open('passcode.Dat','rb'))
 code = input("Hi (imput user choice name here), Enter Activation Code:")
 
 if code == "":
