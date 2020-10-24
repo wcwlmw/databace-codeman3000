@@ -22,21 +22,33 @@ def First_Time():
         
 
 
-
+#this is incomplete, add way to name/rename file and platform/option list for databases
 
 def Normal():
+    File_Name = input("choose a file name: ")
+    if (input == ""):
+        File_Name = 'DataBase.Dat'
+    try:
+        file_handle = open(File_Name, 'wb')
+        DataBase = pickle.load(file_handle)
+    except OSError:
+        print ("File does not exist. Creating blank.")
+        DataBase = []
+        file_handle = open(File_Name, "wb")
+        pickle.dump(DataBase, file_handle)
+
     while True:
-        DataBase = pickle.load(open('DataBase.Dat','rb'))
+
+
         
         print("Do you want to")
-        print("1. View Database\n2. Add to the Database\n3. Delete items")
+        print("1. View Database\n2. Add to the Database\n3. Delete items\n4. create file\n5. open file")
         print("")
-        print(" type 1 2 or 3")
+        print(" type 1, 2, 3, 4, or 5")
         choice = input('')
-        
+
     
         if int(choice) == 1:
-            
             print(DataBase)
 
         elif int(choice) == 2:
@@ -47,37 +59,22 @@ def Normal():
                 if choice != 'DONE':
                     DataBase.append(choice)
 
-
-
         elif int(choice) == 3:
             print(DataBase)
-                 
             
             print("")
             print("")
             print("Which Item to delete? Enter name ")
             choice = input("")
-            
-            
-            
+
             DataBase.remove(choice)
-            
-                
+
+        elif int(choice) == 4:
 
 
+        pickle.dump(DataBase, open('DataBase.Dat','wb'))
 
 
-
-
-            
-        pickle.dump(DataBase, open('DataBase.Dat','wb'))    
-
-
-
-
-
-
-            
 
 code = input("Hi (imput user choice name here), Enter Activation Code:")
 
