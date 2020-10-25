@@ -7,7 +7,7 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
 ### password = b"password"
 def get_encrypt(password):
-    salt = os.urandom(16)
+    salt = b'\xd1\xe2[\xdd\x1c~#\xa4H6v\xfa\x8b1|\xd6'
     kdf = PBKDF2HMAC(
         algorithm=hashes.SHA256(),
         length=32,
