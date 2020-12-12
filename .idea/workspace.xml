@@ -30,6 +30,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1jKxsas7yy3uw26eoZyOyzUWLYv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -39,20 +40,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager">
     <configuration name="DataBase" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="databace-codeman3000" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="C:\Users\nicos\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/OneDrive/Desktop/personal/codeing/mason databace" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataBase.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -104,48 +107,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added encryption (incomplete)" />
     <MESSAGE value="Add PyCharm .idea directory" />
     <option name="LAST_COMMIT_MESSAGE" value="Add PyCharm .idea directory" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1601" height="283" key="GridCell.Tab.0.bottom" timestamp="1603588885148">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1601" height="283" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1603588885148" />
-    <state width="1601" height="283" key="GridCell.Tab.0.center" timestamp="1603588885148">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1601" height="283" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1603588885148" />
-    <state width="1601" height="283" key="GridCell.Tab.0.left" timestamp="1603588885147">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1601" height="283" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1603588885147" />
-    <state width="1601" height="283" key="GridCell.Tab.0.right" timestamp="1603588885148">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1601" height="283" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1603588885148" />
-    <state x="1021" y="231" key="RollbackChangesDialog" timestamp="1603588120015">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="1021" y="231" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1603588120015" />
-    <state width="498" height="398" key="SwitcherDM" timestamp="1603568517356">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="498" height="398" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1603568517356" />
-    <state x="852" y="261" key="Vcs.Push.Dialog.v2" timestamp="1603588562841">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="852" y="261" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1603588562841" />
-    <state x="1027" y="430" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1603588282107">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="1027" y="430" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1603588282107" />
-    <state x="1013" y="423" key="git4idea.ui.GitResetDialog" timestamp="1603588213853">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="1013" y="423" key="git4idea.ui.GitResetDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1603588213853" />
   </component>
 </project>

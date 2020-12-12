@@ -1,4 +1,6 @@
 import pickle
+import configparser
+import time
 import os
 import base64
 from cryptography.fernet import Fernet
@@ -37,28 +39,19 @@ def write_file(File_Name, DataBase, encryptor):
     fh.write(encryptor.encrypt(pickle.dumps(DataBase)))
     fh.close()
 
-def Choose_File():
-    file_handle = False
-    File_Name = input("choose a file name: ")
-    if (File_Name == ""):
-        File_Name = 'DataBase.Dat'
+def Normal(File_Name):
+
     password = input("password for that file: ")
     encryptor = get_encrypt(password)
-    while (not file_handle):
-        file_handle = open_file(File_Name)
-        if (not file_handle):
-            NoFile = input ("File does not exist. Do you want to try again or create a blank file?.\n1 = try again\n2 = create a new file")
-            if (NoFile == "1"):
-                File_Name = input("Re-type filename: ")
-                password = input("Re-type password: ")
-            elif (NoFile == "2"):
-                file_handle = open_file(File_Name, force=True, encryptor=encryptor)
 
-    return ([File_Name, file_handle, password, encryptor])
+    fileHandle = open_file(File_Name)
+    if (False == fileHandle):
+        FailedToOpenFile = input("failed. did you mean %s or do you want to create a file with this name? (y/n): " % (File_Name))
+        if ('y' == FailedToOpenFile):
+            fileHandle = open_file(File_Name, force=True, encryptor=encryptor)
+        if ('n' == FailedToOpenFile):
+            os.exit(1)
 
-def Normal():
-
-    (File_Name, fileHandle, password, encryptor) = Choose_File()
     DataBase = pickle.loads(encryptor.decrypt(fileHandle.read()))
     fileHandle.close()
 
@@ -87,5 +80,7 @@ def Normal():
 
 if __name__=="__main__":
 
-    os.chdir(input("specify data directory: "))
-    Normal()
+    SecAcc = input("which database name do u want to open? ")
+    config = configparser.ConfigParser()
+    config.read("DataBase.ini")
+    Normal(config.get(SecAcc, "file"))
