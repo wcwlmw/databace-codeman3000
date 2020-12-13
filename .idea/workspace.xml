@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67df85fc-ed21-4061-962c-fb949e977e4f" name="Default Changelist" comment="- Add PyCharm .idea directory&#10;- Made it easier to access database by implementing a config file.&#10;- TODO: Add way to quit when done modifying database.">
+    <list default="true" id="67df85fc-ed21-4061-962c-fb949e977e4f" name="Default Changelist" comment="- added a sloppy exit code.&#10;- todo: clean up exit code, open .ini files.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607817129482</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- added a sloppy exit code.&#10;- todo: clean up exit code, open .ini files.">
+      <created>1607822670165</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607822670165</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +127,7 @@
     <MESSAGE value="added encryption (incomplete)" />
     <MESSAGE value="Add PyCharm .idea directory" />
     <MESSAGE value="- Add PyCharm .idea directory&#10;- Made it easier to access database by implementing a config file.&#10;- TODO: Add way to quit when done modifying database." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add PyCharm .idea directory&#10;- Made it easier to access database by implementing a config file.&#10;- TODO: Add way to quit when done modifying database." />
+    <MESSAGE value="- added a sloppy exit code.&#10;- todo: clean up exit code, open .ini files." />
+    <option name="LAST_COMMIT_MESSAGE" value="- added a sloppy exit code.&#10;- todo: clean up exit code, open .ini files." />
   </component>
 </project>

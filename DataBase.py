@@ -50,7 +50,7 @@ def Normal(File_Name):
         if ('y' == FailedToOpenFile):
             fileHandle = open_file(File_Name, force=True, encryptor=encryptor)
         if ('n' == FailedToOpenFile):
-            os.exit(1)
+            exit(1)
 
     DataBase = pickle.loads(encryptor.decrypt(fileHandle.read()))
     fileHandle.close()
@@ -79,7 +79,7 @@ def Normal(File_Name):
             write_file(File_Name, DataBase, encryptor)
 
         elif int(choice) == 4:
-            os.exit(1)
+            exit(0)
 
 if __name__=="__main__":
 
