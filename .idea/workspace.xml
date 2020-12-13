@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67df85fc-ed21-4061-962c-fb949e977e4f" name="Default Changelist" comment="Add PyCharm .idea directory">
+    <list default="true" id="67df85fc-ed21-4061-962c-fb949e977e4f" name="Default Changelist" comment="- Add PyCharm .idea directory&#10;- Made it easier to access database by implementing a config file.&#10;- TODO: Add way to quit when done modifying database.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603588545787</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Add PyCharm .idea directory&#10;- Made it easier to access database by implementing a config file.&#10;- TODO: Add way to quit when done modifying database.">
+      <created>1607817129482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607817129482</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added encryption (incomplete)" />
     <MESSAGE value="Add PyCharm .idea directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add PyCharm .idea directory" />
+    <MESSAGE value="- Add PyCharm .idea directory&#10;- Made it easier to access database by implementing a config file.&#10;- TODO: Add way to quit when done modifying database." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Add PyCharm .idea directory&#10;- Made it easier to access database by implementing a config file.&#10;- TODO: Add way to quit when done modifying database." />
   </component>
 </project>

@@ -57,8 +57,8 @@ def Normal(File_Name):
 
     while True:
         print("Do you want to")
-        print("1. View Database\n2. Add to the Database\n3. Delete items")
-        choice = input(" type 1, 2, or 3: ")
+        print("1. View Database\n2. Add to the Database\n3. Delete items\n4. or exit the program")
+        choice = input(" type 1, 2, 3, or 4: ")
 
         if int(choice) == 1:
             print(DataBase)
@@ -77,6 +77,9 @@ def Normal(File_Name):
             choice = input("\n\nWhich Item to delete? Enter name ")
             DataBase.remove(choice)
             write_file(File_Name, DataBase, encryptor)
+
+        elif int(choice) == 4:
+            os.exit(1)
 
 if __name__=="__main__":
 
