@@ -1,4 +1,5 @@
 import sys, os, re
+from PIL import Image
 import pickle
 import configparser
 import time
@@ -9,6 +10,8 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
 yesMatch = re.compile("yes", re.IGNORECASE)
 noMatch = re.compile("no", re.IGNORECASE)
+textMatch = re.compile("text", re.IGNORECASE)
+imageMatch = re.compile("image", re.IGNORECASE)
 
 ### password = b"password"
 def get_encrypt(password):
@@ -63,15 +66,27 @@ def Normal(File_Name):
         choice = input(" type 1, 2, 3, or 4: ")
 
         if int(choice) == 1:
-            print(DataBase)
+            for element in DataBase:
+                if (isinstance(element, str)):
+                    print(element)
+                elif (isinstance(element, dict)):
+                    Image.show(element["Image"])
 
         elif int(choice) == 2:
-            choice = input('Type first thing to add to database ')
-            DataBase.append(choice)
-            while choice != 'DONE':
-                choice = input('type next item to add to database, if finished type DONE ')
-                if choice != 'DONE':
-                    DataBase.append(choice)
+            TextOrImage = input('do you want to add text or an image? (Text/Image) ')
+            if (textMatch.match(TextOrImage)):
+                # do something with text
+                choice = input('Type first thing to add to database: ')
+                DataBase.append(choice)
+
+            elif (imageMatch.match(TextOrImage)):
+                # do something with an image
+                AddImage = input("what is the path to the Image file?")
+                im = Image.open(AddImage)
+                DataBase.append({"Image": im.tobytes(encoder_name='raw')})
+            else:
+                print("What?")
+
             write_file(File_Name, DataBase, encryptor)
 
         elif int(choice) == 3:
