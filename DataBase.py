@@ -1,7 +1,5 @@
-import sys, os, re, pickle, time
+import sys, os, re, pickle, time, configparser, base64
 from PIL import Image
-import configparser
-import base64
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
